@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+h1{
+    color: rgba(227, 98, 7, 0.903);
+}
+body{
+    background-color: azure;
+}
+.gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+     
+}
+.gallery img{
+    width: 250px;
+    cursor: pointer;
+    transition: 1;
+}
+.gallery img:hover{
+transform: scale(1.1) rotate(-360deg);
+border-radius: 16px;
+box-shadow: 10px 25px rgba(68, 77, 136, 0.2);
+transition: ease 0.5s;
+}
+.ful-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.592);
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+}
+.ful-img img{
+    width: 600px;
+    height: 600px;
+    
+}
+.ful-img span{
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    font-size: 36px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.ful-img span:hover{
+    transform: scale(1.8) rotate(-360deg) ;
+    transition: ease 1s;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+  <body>
+    <center>
+    <h1>GALLERY</h1>
+</center>
+<div class="ful-img" id="fulimgbox">
+  <center>  <img src="image1.jpg" id="fulimg"></center>
+  <span onclick="closefulimg()">❌</span>
+</div>
+<div class="gallery">
+    <img src="image1.jpg" onclick="openfulimg(this.src)">
+    <img src="image2.avif" onclick="openfulimg(this.src)">
+    <img src="image3.avif" onclick="openfulimg(this.src)">
+    <img src="image4.webp" onclick="openfulimg(this.src)">
+    <img src="image5.jpg" onclick="openfulimg(this.src)">
+    <img src="image6.avif" onclick="openfulimg(this.src)">
+    <img src="image7.avif" onclick="openfulimg(this.src)">
+    
+    
+</div>
+  </body>
+  <script>
+    var fulimgbox=document.getElementById("fulimgbox");
+    var fulimg=document.getElementById("fulimg");
+
+    function openfulimg(pic){
+        fulimgbox.style.display= "flex"
+        fulimg.src=pic
+    }
+    function closefulimg(){
+        fulimgbox.style.display="none";
+       
+    }
+    
+  </script>
+  <footer>
+   <h1> DISIGNED AND DEVELOPED BY</h1>
+   <h2>D.NITISH ADAVAN</h2>
+  </footer>
+</html>
